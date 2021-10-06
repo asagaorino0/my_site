@@ -1,6 +1,20 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./node_modules/gatsby/dist/internal-plugins/bundle-optimisations/polyfills/object-assign.js":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/gatsby/dist/internal-plugins/bundle-optimisations/polyfills/object-assign.js ***!
+  \***************************************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = Object.assign;
+//# sourceMappingURL=object-assign.js.map
+
+/***/ }),
+
 /***/ "./.cache/api-runner-ssr.js":
 /*!**********************************!*\
   !*** ./.cache/api-runner-ssr.js ***!
@@ -3750,107 +3764,6 @@ module.exports = toPlainObject;
 
 /***/ }),
 
-/***/ "./node_modules/object-assign/index.js":
-/*!*********************************************!*\
-  !*** ./node_modules/object-assign/index.js ***!
-  \*********************************************/
-/***/ ((module) => {
-
-"use strict";
-/*
-object-assign
-(c) Sindre Sorhus
-@license MIT
-*/
-
-
-/* eslint-disable no-unused-vars */
-var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var propIsEnumerable = Object.prototype.propertyIsEnumerable;
-
-function toObject(val) {
-	if (val === null || val === undefined) {
-		throw new TypeError('Object.assign cannot be called with null or undefined');
-	}
-
-	return Object(val);
-}
-
-function shouldUseNative() {
-	try {
-		if (!Object.assign) {
-			return false;
-		}
-
-		// Detect buggy property enumeration order in older V8 versions.
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
-		var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
-		test1[5] = 'de';
-		if (Object.getOwnPropertyNames(test1)[0] === '5') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test2 = {};
-		for (var i = 0; i < 10; i++) {
-			test2['_' + String.fromCharCode(i)] = i;
-		}
-		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
-			return test2[n];
-		});
-		if (order2.join('') !== '0123456789') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test3 = {};
-		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
-			test3[letter] = letter;
-		});
-		if (Object.keys(Object.assign({}, test3)).join('') !==
-				'abcdefghijklmnopqrst') {
-			return false;
-		}
-
-		return true;
-	} catch (err) {
-		// We don't expect any of the above to throw, but better to be safe.
-		return false;
-	}
-}
-
-module.exports = shouldUseNative() ? Object.assign : function (target, source) {
-	var from;
-	var to = toObject(target);
-	var symbols;
-
-	for (var s = 1; s < arguments.length; s++) {
-		from = Object(arguments[s]);
-
-		for (var key in from) {
-			if (hasOwnProperty.call(from, key)) {
-				to[key] = from[key];
-			}
-		}
-
-		if (getOwnPropertySymbols) {
-			symbols = getOwnPropertySymbols(from);
-			for (var i = 0; i < symbols.length; i++) {
-				if (propIsEnumerable.call(from, symbols[i])) {
-					to[symbols[i]] = from[symbols[i]];
-				}
-			}
-		}
-	}
-
-	return to;
-};
-
-
-/***/ }),
-
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!***************************************************!*\
   !*** ./node_modules/prop-types/checkPropTypes.js ***!
@@ -3981,7 +3894,7 @@ module.exports = checkPropTypes;
 
 
 var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
-var assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
+var assign = __webpack_require__(/*! object-assign */ "./node_modules/gatsby/dist/internal-plugins/bundle-optimisations/polyfills/object-assign.js");
 
 var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
@@ -4823,24 +4736,24 @@ if (false) {} else {
 /***/ }),
 
 /***/ "react-dom/server":
-/*!*****************************************************************************************!*\
-  !*** external "C:\\Users\\asaga\\Desktop\\my_site\\node_modules\\react-dom\\server.js" ***!
-  \*****************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** external "/Users/s.y/dev/03.proaca/02.website/my_site/node_modules/react-dom/server.js" ***!
+  \***********************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("C:\\Users\\asaga\\Desktop\\my_site\\node_modules\\react-dom\\server.js");
+module.exports = require("/Users/s.y/dev/03.proaca/02.website/my_site/node_modules/react-dom/server.js");
 
 /***/ }),
 
 /***/ "react":
-/*!************************************************************************************!*\
-  !*** external "C:\\Users\\asaga\\Desktop\\my_site\\node_modules\\react\\index.js" ***!
-  \************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** external "/Users/s.y/dev/03.proaca/02.website/my_site/node_modules/react/index.js" ***!
+  \******************************************************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("C:\\Users\\asaga\\Desktop\\my_site\\node_modules\\react\\index.js");
+module.exports = require("/Users/s.y/dev/03.proaca/02.website/my_site/node_modules/react/index.js");
 
 /***/ })
 
