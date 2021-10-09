@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-js",
     "path": "/",
-    "result": {"pageContext":{}},
+    "result": {"data":{"allContentfulPost":{"edges":[{"node":{"title":"blog1009","image":{"title":"1568919","file":{"url":"//images.ctfassets.net/cfmwko47p40l/yu7bsgU1QIxuVXWVjazCX/e93f9507795899d3ee405d9c269389cf/1568919.jpg"}},"description":{"description":"しあわせのしまらっきょです。"},"slug":"blog","updatedAt":"2021年10月08日"}}]}},"pageContext":{}},
     "staticQueryHashes": []}
