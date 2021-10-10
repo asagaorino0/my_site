@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-js",
     "path": "/",
-    "result": {"pageContext":{}},
+    "result": {"data":{"allContentfulPost":{"edges":[{"node":{"title":"blog1009","image":{"title":"1568919","file":{"url":"//images.ctfassets.net/cfmwko47p40l/yu7bsgU1QIxuVXWVjazCX/e93f9507795899d3ee405d9c269389cf/1568919.jpg"}},"description":{"description":"しあわせのしまらっきょです。"},"slug":"blog","updatedAt":"2021年10月08日"}},{"node":{"title":"test","image":{"title":"photo-1445358899385-5d4b6bbe0acb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTYzMzY5MjIyMw&ixlib=rb-1.2.1&q=80&utm campaign=api-credit&utm medium=referral&utm source=unsplash source&w=1600","file":{"url":"//images.ctfassets.net/cfmwko47p40l/3SwsSJWSdyrek1th6PSOKm/b74b94006b59132b6cf34f75ec769dfe/photo-1445358899385-5d4b6bbe0acb"}},"description":{"description":"test"},"slug":"test","updatedAt":"2021年10月10日"}}]}},"pageContext":{}},
     "staticQueryHashes": []}
